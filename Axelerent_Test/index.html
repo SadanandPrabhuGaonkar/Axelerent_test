@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="frontend engineer 1 test in axelrent">
+      <meta name="keywords" content="Axelrent test, test, frontend test">
+      <meta name="author" content="Sadanand Prabhugaonkar">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="./styles/style.css">
+      <title>Axelerent Test</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container container-main">
+            <img src ="./images/warning.png" alt="warning">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+         </div>
+         <nav class="navbar container-main">
+            <a href="#" class="hamburger"><img src="./images/hamburger.png" alt="hamburger" id="hamburger-icon"></a>
+            <a href="#" class="nav-logo"><img src="./images/logo.png" alt="logo"></a>
+            <a href="#" class="logout"><img src="./images/logout.png" alt="logout"></a>
+            <ul class="nav-menu">
+               <li class="nav-item">
+                  <a href="#" class="nav-link">Dashboard</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link active" >Account</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">Help</a>
+               </li>
+               <li class="nav-item d-hide">
+                  <a href="#" class="nav-link">Logout</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <section class="details container-main">
+         <div class="container-details">
+            <div class="image">
+               <img src="./images/profile.png" alt="profile">
+            </div>
+            <div class="form">
+               <h1>My Account</h1>
+               <form>
+                  <div class="name-section">
+                     <input class="b-border" required='' type='text'>
+                     <label alt='Name' placeholder='Name'></label>
+                  </div>
+                  <div class="other-section">
+                     <div class="mobile-section">
+                        <input class="b-border" required='' type='text'>
+                        <label alt='Phone' placeholder='Phone'></label>
+                     </div>
+                     <div class="email-section">
+                        <input class="b-border" required='' type='text'>
+                        <label alt='Email' placeholder='Email'></label>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <section class ="select-section container-main">
+         <h1>Select Configuration</h1>
+         <div class = "row">
+            <div class="col-b">
+               <button class="check active b-border" aria-label=""><img src="./images/check.png" alt="check"></button>
+            </div>
+            <div class="row-m b-border">
+               <div class="col-m">
+                  <h2>Manual Configuration</h2>
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+               </div>
+            </div>
+         </div>
+         <div class = "row">
+            <div class="col-b">
+            </div>
+            <div class="row-m b-border">
+               <div class="col-m f-400">
+                  <h2>Services Access</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed massa leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu varius felis. Integer posuere urna ut mi porta, vel fringilla dolor convallis. Sed laoreet sodales sapien vel vestibulum. Nulla dictum eros ut efficitur porttitor. Mauris dignissim, lectus sit amet euismod pretium, ex purus condimentum erat, eu feugiat nisi ipsum ac eros.</p>
+               </div>
+            </div>
+         </div>
+         <div class = "row">
+            <div class="col-b">
+               <button class="check b-border" aria-label=""><img src="./images/check.png" alt="check"></button>
+            </div>
+            <div class="row-m b-border">
+               <div class="col-m">
+                  <h2>Semi-auto Configuration</h2>
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+               </div>
+            </div>
+         </div>
+         <div class = "row">
+            <div class="col-b">
+               <button class="check b-border" aria-label=""><img src="./images/check.png" alt="check"></button>
+            </div>
+            <div class="row-m b-border">
+               <div class="col-m">
+                  <h2>Automatic Configuration</h2>
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="button-section">
+         <div class="col-b">
+         </div>
+         <button class="btn-orange" id="myBtn"><img src="./images/configure.png" alt="configure">Update Configuration</button>
+         <button class="btn-orange-b"><img src="./images/cancel.png" alt="cancel">Cancel</button>
+      </section>
+      <div id="myModal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+            <img src="./images/clap.png" alt="clap">
+            <h1>Great Job!</h1>
+            <p>Your configurations have been updated successfully.</p>
+         </div>
+      </div>
+      <script src="./js/script.js"></script>
+   </body>
+</html>

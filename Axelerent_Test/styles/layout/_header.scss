@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+body {
+    @media only screen and (max-width: 1024px) {
+        &.active {
+            display: block;
+            position: fixed;
+        }
+    }
+}
+
+.header {
+    .container-main {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .container {
+        width: 100%;
+        background-color: $warning-background;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p {
+            font-size: 16px;
+            padding-left: 16px;
+            font-weight: 700;
+        }
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $nav-color;
+        .nav-logo {
+            display: flex;
+            img {
+                width: 227px;
+                @media only screen and (max-width: 767px) {
+                    width: 161.82px;
+                }
+            }
+        }
+        .logout {
+            display: none;
+            @media only screen and (max-width: 1024px) {
+                display: flex;
+            }
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width: 1024px) {
+                position: fixed;
+                left: -100%;
+                top: 8.3rem;
+                flex-direction: column;
+                background-color: $nav-color;
+                width: 100%;
+                height: 100vh;
+                background-attachment: fixed;
+                transition: 0.3s;
+                justify-content: flex-start;
+                border-top: 1px solid rgba(0, 0, 0, 0.25);
+                padding: 32px;
+                &.active {
+                    left: 0;
+                }
+            }
+            @media only screen and (max-width: 767px) {
+                top: 9.2rem;
+            }
+            @media only screen and (max-width: 376px) {
+                top: 10.5rem;
+            }
+            li {
+                list-style: none;
+            }
+            .nav-item {
+                margin-left: 5rem;
+                @media only screen and (max-width: 1024px) {
+                    margin: 0px 0px 58px 0px;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+                .nav-link {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $test-white;
+                    border-bottom: 1px solid transparent;
+                    padding-bottom: 16.5px;
+                    @media only screen and (max-width: 1024px) {
+                        display: block;
+                        width: 100%;
+                        border-bottom: 2px solid transparent;
+                        padding-bottom: 16px;
+                    }
+                    &.active {
+                        color: $test-white;
+                        border-bottom: 10px solid $nav-border-green;
+                        padding-bottom: 16.5px;
+                        @media only screen and (max-width: 1024px) {
+                            border-bottom: 2px solid $nav-border-green;
+                            padding-bottom: 16px;
+                        }
+                    }
+                    &:hover {
+                        color: $test-white;
+                        border-bottom: 10px solid $nav-border-green;
+                        padding-bottom: 16.5px;
+                        @media only screen and (max-width: 1024px) {
+                            border-bottom: 2px solid $nav-border-green;
+                            padding-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .hamburger {
+            display: none;
+            @media only screen and (max-width: 1024px) {
+                display: flex;
+                cursor: pointer;
+                &.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                &.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                &.active .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+        }
+    }
+}

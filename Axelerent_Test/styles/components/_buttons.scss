@@ -1,0 +1,36 @@
+button {
+    padding: 16px;
+    margin-right: 28px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    @media only screen and (max-width: 767px) {
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+}
+
+.btn-orange-b {
+    border: 1px solid $test-orange;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: $test-orange;
+    background-color: $test-white;
+    img {
+        margin-right: 10px;
+    }
+}
+
+.btn-orange {
+    background-color: $test-orange;
+    color: $test-white;
+    border: 1px solid $test-orange;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    img {
+        margin-right: 10px;
+    }
+}
